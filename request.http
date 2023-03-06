@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name" : "Caneta vermelha",
+    "price" : 5
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/e91adfcd-6005-4d99-939f-4f937b631790
+
+###
+
+PUT http://localhost:4002/products/53e37fd8-7b9a-44fc-8ef4-9ac69fe83b1c
+content-type: application/json
+
+{
+    "name" : "Caneta laranja bic",
+    "price" : 3.5
+}
+
+###
+
+DELETE http://localhost:4002/products/86da4f0c-8140-4e4e-b33c-b8aab3122ba3
